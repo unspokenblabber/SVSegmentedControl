@@ -13,16 +13,21 @@
 @end
 
 typedef enum {
-    SVSegmentedControlModeSticky,
+    SVSegmentedControlModeSticky = 0,
     SVSegmentedControlModeButton,
     SVSegmentedControlModeMultipleSelection
 }SVSegmentedControlMode;
 
 typedef enum {
-    SVSegmentedControlSelectionAnimationDefault,
+    SVSegmentedControlSelectionAnimationDefault = 0,
     SVSegmentedControlSelectionAnimationFade,
     SVSegmentedControlSelectionAnimationSlide
 }SVSegmentedControlSelectionAnimation;
+
+typedef enum {
+    SVSegmentedControlArrowDirectionUp = 0,
+    SVSegmentedControlArrowDirectionDown,
+}SVSegmentedControlArrowDirection;
 
 @interface SVSegmentedControl : UIControl
 

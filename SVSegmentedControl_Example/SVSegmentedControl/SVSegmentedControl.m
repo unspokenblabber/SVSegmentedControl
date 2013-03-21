@@ -83,7 +83,7 @@
 //    SelectionView
     UIButton *firstButton = [_buttonsArray objectAtIndex:0];
     CGRect buttonFrame = firstButton.frame;
-    rect = buttonFrame;
+    rect = CGRectMake(buttonFrame.origin.x, viewBoundRect.origin.y, buttonFrame.size.width, buttonFrame.size.height);
     _selectionView.frame = rect;
 }
 
